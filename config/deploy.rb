@@ -4,6 +4,14 @@ lock "3.7.1"
 set :application, "my_app_name"
 set :repo_url, "git@example.com:me/my_repo.git"
 
+set :application, "gnana"
+set :repo_url, "https://github.com/krish4/gnana.git"
+
+set :deploy_to, '/home/deploy/gnana'
+
+append :linked_files, "config/database.yml", "config/secrets.yml"
+append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "vendor/bundle", "public/system", "public/uploads"
+
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
