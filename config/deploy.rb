@@ -9,7 +9,7 @@ set :repo_url, 'https://github.com/krish4/gnana.git'
 
 # Default deploy_to directory is /var/www/my_app_name
  set :deploy_to, '/home/deploy/gnana'
-
+set :tmp_dir, "/home/deploy/tmp"
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh
 
