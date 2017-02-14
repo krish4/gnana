@@ -34,3 +34,9 @@ set :tmp_dir, "/home/deploy/tmp"
 
 # Default value for keep_releases is 5
 # set :keep_releases, 5
+
+ #task :create_db do
+   # on roles(:web) do
+   #   execute "cd #{current_path}; bundle exec rake db:create RAILS_ENV=#{rails_env}"
+   # end
+ #end
